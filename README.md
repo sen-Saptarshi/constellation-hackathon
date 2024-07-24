@@ -10,3 +10,16 @@ DAG Provider Info
 Accounts: DAG43CV4X8MBnwxej9yW9CBYDTEqeBsK3QpPK4Uj
 Chain ID: 3
 ```
+Hello
+
+Prateush-
+ETH Provider Info
+Accounts: 0x74266A48dd024Fbd9C0eD564aB492B7bb7EfCb96
+
+Chain ID: 0xaa36a7
+
+DAG Provider Info
+Accounts: DAG4D7UD58CP26KMQNi6WbGj5rrGrLV3ZR4zZ3XV
+
+Chain ID: 3
+
