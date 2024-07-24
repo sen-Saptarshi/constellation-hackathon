@@ -4,7 +4,7 @@ import { activateStargazerProviders } from "./activateStargazerProviders";
 export default function Sign() {
   const [signatureCode, setSignatureCode] = useState(null);
   const [signContent, setSignContent] = useState(null);
-
+// Send the request and wait for the signature
   const signData = async () => {
     const provider = await activateStargazerProviders();
     const signatureRequest = {
