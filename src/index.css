@@ -66,3 +66,17 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+input {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 6px 12px;
+  margin-bottom: 12px;
+  width: 100%;
+}
+
+input:focus {
+  outline: none;
+  border-color: #646cff;
+  box-shadow: 0 0 0 2px #646cff66;
+}
