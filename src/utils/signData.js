@@ -1,3 +1,6 @@
+
+async function Sign()
+{
 const dagProvider = window.stargazer.getProvider("constellation");
 const ethProvider = window.stargazer.getProvider("ethereum");
 
@@ -16,7 +19,7 @@ const signatureRequestEnconded = window.btoa(JSON.stringify(signatureRequest));
 await dagProvider.request({
   method: "dag_signMessage",
   params: [
-    "DAG88C9WDSKH451sisyEP3hAkgCKn5DN72fuwjfX",
+    "DAG4D7UD58CP26KMQNi6WbGj5rrGrLV3ZR4zZ3XV",
     signatureRequestEnconded,
   ],
 });
@@ -26,6 +29,9 @@ await dagProvider.request({
 // Send the request and wait for the signature
 await dagProvider.request({
   method: "dag_getPublicKey",
-  params: ["DAG88C9WDSKH451sisyEP3hAkgCKn5DN72fuwjfX"],
+  params: ["DAG4D7UD58CP26KMQNi6WbGj5rrGrLV3ZR4zZ3XV"],
 });
 // "0482c4566a9c4cbb6f23b9a31c96876501c71f5c04b35f416e0b2243113cce8fb386a2db0b3881d1c908d33465748b948649165a6705904120238999eed6eed1f4"
+};
+
+export default Sign;
