@@ -21,7 +21,25 @@ export const activateStargazerProviders = async () => {
   const dagProvider = walletProvider.getProvider("constellation");
   await dagProvider.activate();
 
+  const ethAccounts = await ethProvider.request({
+    method: "eth_accounts",
+  });
+  const ethChainId = await ethProvider.request({
+    method: "eth_chainId",
+  });
+
+  const dagAccounts = await dagProvider.request({
+    method: "dag_accounts",
+  });
+  const dagChainId = await dagProvider.request({
+    method: "dag_chainId",
+  });
+
   return {
+    ethAccounts,
+    ethChainId,
+    dagAccounts,
+    dagChainId,
     ethProvider,
     dagProvider,
   };
